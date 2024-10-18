@@ -77,8 +77,8 @@
     </ScrollView>
 
 
-
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -102,11 +102,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@color/background"
                     android:gravity="center"
                     android:text="Contact Details"
-                    android:background="@color/background"
                     android:textSize="25dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/nameEditText"
@@ -130,10 +130,10 @@
                     android:id="@+id/ageEditText"
                     android:layout_width="250dp"
                     android:layout_height="48dp"
-                    android:inputType="number"
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:hint="Age"
+                    android:inputType="number"
                     android:textAlignment="center" />
             </LinearLayout>
 
@@ -148,5 +148,15 @@
             android:text="Add" />
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/logOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
